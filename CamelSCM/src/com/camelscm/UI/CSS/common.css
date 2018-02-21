@@ -21,3 +21,15 @@ and open the template in the editor.
     -fx-background-position: 98%;
     
 }
+.txtusername {
+    -fx-background-image: url("../../res/16x16/user.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 98%;
+    
+}
+.txtpassword {
+    -fx-background-image: url("../../res/16x16/key.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 98%;
+    
+}
