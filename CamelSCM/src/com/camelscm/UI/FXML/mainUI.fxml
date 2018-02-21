@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.camelscm.UI.controllers.MainUIController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+      <bottom>
+        <HBox prefHeight="31.0" prefWidth="570.0" />
+      </bottom>
+      <center>
+        <GridPane blendMode="MULTIPLY" hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+          <children>
+            <LineChart id="LineChart" prefHeight="153.0" prefWidth="570.0" snapToPixel="true" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Column X" />
+                <TableColumn prefWidth="75.0" text="Column X" />
+              </columns>
+            </TableView>
+            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Column X" />
+                <TableColumn prefWidth="75.0" text="Column X" />
+              </columns>
+            </TableView>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </center>
+      <top>
+        <VBox minHeight="54.0" prefHeight="69.00009999999747" prefWidth="570.0">
+          <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Standard Operating Procedures">
+                  <items>
+                    <Menu mnemonicParsing="false" text="Supply Chain">
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="Raw Materials" />
+                        <Menu mnemonicParsing="false" text="Inventory">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Empty Bags Inventory" />
+                          </items>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" text="Products" />
+                        <MenuItem mnemonicParsing="false" text="Production" />
+                        <MenuItem mnemonicParsing="false" text="Customers" />
+                        <MenuItem mnemonicParsing="false" text="Orders" />
+                        <MenuItem mnemonicParsing="false" text="Dispatch" />
+                      </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Utilities">
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="Vehicles" />
+                        <MenuItem mnemonicParsing="false" text="Drivers" />
+                        <MenuItem mnemonicParsing="false" text="Vehicle Maintenance" />
+                        <MenuItem mnemonicParsing="false" text="Fuel Vouchers" />
+                      </items>
+                    </Menu>
+                    <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Reports">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Orders Report" />
+                    <MenuItem mnemonicParsing="false" text="Raw Materials Report" />
+                    <MenuItem mnemonicParsing="false" text="Bags Inventory Report" />
+                    <MenuItem mnemonicParsing="false" text="Product Inventory Report" />
+                    <MenuItem mnemonicParsing="false" text="Production Report" />
+                    <MenuItem mnemonicParsing="false" text="Dispatch Report" />
+                    <MenuItem mnemonicParsing="false" text="Fuel Report" />
+                    <MenuItem mnemonicParsing="false" text="Vehicles and Drivers Reports" />
+                    <MenuItem mnemonicParsing="false" text="Service Report" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Settings">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="User Management" />
+                    <MenuItem mnemonicParsing="false" text="Mail Settings" />
+                    <MenuItem mnemonicParsing="false" text="Backup/Restore" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar>
+              <items>
+                <Button mnemonicParsing="false" text="Products">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/database.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+                <Button mnemonicParsing="false" text="Production">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/process.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+                <Button mnemonicParsing="false" text="Orders">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/pages.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+                <Button mnemonicParsing="false" text="Dispatch">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/truck.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+                <Button mnemonicParsing="false" text="Customers">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/users.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+                <MenuButton mnemonicParsing="false" text="Logged in As : ">
+                  <graphic>
+                    <ImageView fitHeight="32.0" fitWidth="32.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../res/im32/user.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Change Password" />
+                    <MenuItem mnemonicParsing="false" text="Logout" />
+                  </items>
+                </MenuButton>
+              </items>
+            </ToolBar>
+          </children>
+        </VBox>
+      </top>
+    </BorderPane>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <stylesheets>
+    <URL value="@../CSS/mainui.css" />
+  </stylesheets>
+</AnchorPane>

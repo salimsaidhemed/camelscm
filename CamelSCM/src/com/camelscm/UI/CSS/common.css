@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2018, 7:29:47 PM
+    Author     : salim
+*/
+.txtsearch {
+    -fx-background-image: url("../../res/16x16/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 98%;
+    
+    
+    
+}
+.txtrequired {
+    -fx-background-image: url("../../res/16x16/medical.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 98%;
+    
+}
